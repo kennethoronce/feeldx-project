@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from '../Common/Logo';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,21 +40,30 @@ const Header = () => {
         </button>
       </div>
 
-      {mobileMenuOpen && (
-        <div className="md:hidden px-4 pb-4">
-          <nav className="flex flex-col space-y-4">
-            {navigation.map((item) => (
-            <a
-                key={item.id}
-                href={`#${item.id}`}
-                className="text-gray-700 hover:text-blue-600 transition"
-            >
-                {item.name}
-            </a>
-            ))}
-          </nav>
-        </div>
-      )}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: 'easeOut' }}
+            className="md:hidden absolute top-full left-0 w-full z-40 backdrop-blur-md bg-white/70 px-4 py-4 shadow-md"
+          >
+            <nav className="flex flex-col space-y-4">
+              {navigation.map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-gray-800 font-medium text-base hover:text-accent transition"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };

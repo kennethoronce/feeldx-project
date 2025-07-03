@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center px-6 pt-28 pb-16 md:pt-36"
+      className="min-h-[80vh] md:min-h-screen flex items-center px-4 pt-20 pb-12 md:pt-36 md:pb-16"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="text-center md:text-left">

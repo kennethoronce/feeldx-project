@@ -37,6 +37,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 .swiper-pagination-bullet-active {
   background-color: #6c7651 !important;
 }
