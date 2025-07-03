@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/feeldx-project/static/css/main.733cd725.css",
+    "main.js": "/feeldx-project/static/js/main.5e637f0a.js",
+    "static/js/453.c14983e4.chunk.js": "/feeldx-project/static/js/453.c14983e4.chunk.js",
+    "static/media/blueprint-bg.jpg": "/feeldx-project/static/media/blueprint-bg.b82f0eeebf33bb161829.jpg",
+    "static/media/pattern.svg": "/feeldx-project/static/media/pattern.62b29ee738f1f625a8fea4b587b0c67a.svg",
+    "index.html": "/feeldx-project/index.html",
+    "main.733cd725.css.map": "/feeldx-project/static/css/main.733cd725.css.map",
+    "main.5e637f0a.js.map": "/feeldx-project/static/js/main.5e637f0a.js.map",
+    "453.c14983e4.chunk.js.map": "/feeldx-project/static/js/453.c14983e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.733cd725.css",
+    "static/js/main.5e637f0a.js"
+  ]
+}
